@@ -12,6 +12,7 @@
 		2DF8BA1B216D171C00C80A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8BA19216D171C00C80A7D /* Main.storyboard */; };
 		2DF8BA1D216D171D00C80A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8BA1C216D171D00C80A7D /* Assets.xcassets */; };
 		2DF8BA20216D171D00C80A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8BA1E216D171D00C80A7D /* LaunchScreen.storyboard */; };
+		B9E31B49001F129949630871 /* Pods_TaskManager2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365839D91D0333666544EF9D /* Pods_TaskManager2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2DF8BA1C216D171D00C80A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF8BA1F216D171D00C80A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DF8BA21216D171D00C80A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365839D91D0333666544EF9D /* Pods_TaskManager2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskManager2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8416A828464C25DCF2CA5397 /* Pods-TaskManager2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManager2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskManager2/Pods-TaskManager2.release.xcconfig"; sourceTree = "<group>"; };
+		E967B466D4ED953DEA852CAF /* Pods-TaskManager2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManager2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskManager2/Pods-TaskManager2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E31B49001F129949630871 /* Pods_TaskManager2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD2EE71C1DD8DAF86ABC8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				365839D91D0333666544EF9D /* Pods_TaskManager2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DF8BA09216D171C00C80A7D = {
 			isa = PBXGroup;
 			children = (
 				2DF8BA14216D171C00C80A7D /* TaskManager2 */,
 				2DF8BA13216D171C00C80A7D /* Products */,
+				CE6FE7FE9C9E6075925659B6 /* Pods */,
+				1DD2EE71C1DD8DAF86ABC8A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = TaskManager2;
 			sourceTree = "<group>";
 		};
+		CE6FE7FE9C9E6075925659B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E967B466D4ED953DEA852CAF /* Pods-TaskManager2.debug.xcconfig */,
+				8416A828464C25DCF2CA5397 /* Pods-TaskManager2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DF8BA24216D171D00C80A7D /* Build configuration list for PBXNativeTarget "TaskManager2" */;
 			buildPhases = (
+				0904B91FD57F5A4C454504E3 /* [CP] Check Pods Manifest.lock */,
 				2DF8BA0E216D171C00C80A7D /* Sources */,
 				2DF8BA0F216D171C00C80A7D /* Frameworks */,
 				2DF8BA10216D171C00C80A7D /* Resources */,
+				9CCD3018AB7DE2C09455E2DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0904B91FD57F5A4C454504E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaskManager2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CCD3018AB7DE2C09455E2DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TaskManager2/Pods-TaskManager2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskManager2/Pods-TaskManager2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DF8BA0E216D171C00C80A7D /* Sources */ = {
@@ -280,9 +347,11 @@
 		};
 		2DF8BA25216D171D00C80A7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E967B466D4ED953DEA852CAF /* Pods-TaskManager2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TaskManager2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +366,11 @@
 		};
 		2DF8BA26216D171D00C80A7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8416A828464C25DCF2CA5397 /* Pods-TaskManager2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TaskManager2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
