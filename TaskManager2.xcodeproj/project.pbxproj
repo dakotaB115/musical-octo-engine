@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DA04607216FA6D8000018B0 /* Login Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA04606216FA6D8000018B0 /* Login Segue.swift */; };
 		2DF8BA16216D171C00C80A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA15216D171C00C80A7D /* AppDelegate.swift */; };
-		2DF8BA18216D171C00C80A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA17216D171C00C80A7D /* ViewController.swift */; };
 		2DF8BA1B216D171C00C80A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8BA19216D171C00C80A7D /* Main.storyboard */; };
 		2DF8BA1D216D171D00C80A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8BA1C216D171D00C80A7D /* Assets.xcassets */; };
 		2DF8BA20216D171D00C80A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8BA1E216D171D00C80A7D /* LaunchScreen.storyboard */; };
+		2DF8BA2C216D25A700C80A7D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA2B216D25A700C80A7D /* Users.swift */; };
+		2DF8BA31216D27F500C80A7D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA30216D27F500C80A7D /* TableViewCell.swift */; };
+		2DF8BA33216D283B00C80A7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA32216D283B00C80A7D /* User.swift */; };
+		2DF8BA35216D285300C80A7D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA34216D285300C80A7D /* Task.swift */; };
+		2DF8BA37216E4B2D00C80A7D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA36216E4B2D00C80A7D /* Login.swift */; };
+		2DF8BA39216E4B4700C80A7D /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA38216E4B4700C80A7D /* Tasks.swift */; };
+		2DF8BA3B216E4B5D00C80A7D /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA3A216E4B5D00C80A7D /* NewTask.swift */; };
+		2DF8BA3D216E4CDE00C80A7D /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8BA3C216E4CDE00C80A7D /* TaskManager.swift */; };
 		B9E31B49001F129949630871 /* Pods_TaskManager2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365839D91D0333666544EF9D /* Pods_TaskManager2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DA04606216FA6D8000018B0 /* Login Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Segue.swift"; sourceTree = "<group>"; };
 		2DF8BA12216D171C00C80A7D /* TaskManager2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF8BA15216D171C00C80A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2DF8BA17216D171C00C80A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DF8BA1A216D171C00C80A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DF8BA1C216D171D00C80A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF8BA1F216D171D00C80A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DF8BA21216D171D00C80A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DF8BA2B216D25A700C80A7D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		2DF8BA30216D27F500C80A7D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2DF8BA32216D283B00C80A7D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2DF8BA34216D285300C80A7D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2DF8BA36216E4B2D00C80A7D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		2DF8BA38216E4B4700C80A7D /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		2DF8BA3A216E4B5D00C80A7D /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
+		2DF8BA3C216E4CDE00C80A7D /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		365839D91D0333666544EF9D /* Pods_TaskManager2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskManager2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8416A828464C25DCF2CA5397 /* Pods-TaskManager2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManager2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskManager2/Pods-TaskManager2.release.xcconfig"; sourceTree = "<group>"; };
 		E967B466D4ED953DEA852CAF /* Pods-TaskManager2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManager2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskManager2/Pods-TaskManager2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,14 +85,62 @@
 		2DF8BA14216D171C00C80A7D /* TaskManager2 */ = {
 			isa = PBXGroup;
 			children = (
-				2DF8BA15216D171C00C80A7D /* AppDelegate.swift */,
-				2DF8BA17216D171C00C80A7D /* ViewController.swift */,
-				2DF8BA19216D171C00C80A7D /* Main.storyboard */,
+				2DF8BA2F216D27B500C80A7D /* UI Components */,
+				2DF8BA27216D240D00C80A7D /* Realm Stuff */,
+				2DF8BA2A216D24EA00C80A7D /* Storyboards */,
+				2DF8BA29216D24D800C80A7D /* Class Templates */,
+				2DF8BA28216D241900C80A7D /* View Controllers */,
 				2DF8BA1C216D171D00C80A7D /* Assets.xcassets */,
-				2DF8BA1E216D171D00C80A7D /* LaunchScreen.storyboard */,
+				2DF8BA15216D171C00C80A7D /* AppDelegate.swift */,
 				2DF8BA21216D171D00C80A7D /* Info.plist */,
 			);
 			path = TaskManager2;
+			sourceTree = "<group>";
+		};
+		2DF8BA27216D240D00C80A7D /* Realm Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				2DF8BA2B216D25A700C80A7D /* Users.swift */,
+				2DF8BA3C216E4CDE00C80A7D /* TaskManager.swift */,
+			);
+			path = "Realm Stuff";
+			sourceTree = "<group>";
+		};
+		2DF8BA28216D241900C80A7D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DF8BA36216E4B2D00C80A7D /* Login.swift */,
+				2DF8BA38216E4B4700C80A7D /* Tasks.swift */,
+				2DF8BA3A216E4B5D00C80A7D /* NewTask.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2DF8BA29216D24D800C80A7D /* Class Templates */ = {
+			isa = PBXGroup;
+			children = (
+				2DF8BA32216D283B00C80A7D /* User.swift */,
+				2DF8BA34216D285300C80A7D /* Task.swift */,
+			);
+			path = "Class Templates";
+			sourceTree = "<group>";
+		};
+		2DF8BA2A216D24EA00C80A7D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2DF8BA1E216D171D00C80A7D /* LaunchScreen.storyboard */,
+				2DF8BA19216D171C00C80A7D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2DF8BA2F216D27B500C80A7D /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				2DF8BA30216D27F500C80A7D /* TableViewCell.swift */,
+				2DA04606216FA6D8000018B0 /* Login Segue.swift */,
+			);
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
 		CE6FE7FE9C9E6075925659B6 /* Pods */ = {
@@ -202,7 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF8BA18216D171C00C80A7D /* ViewController.swift in Sources */,
+				2DF8BA3D216E4CDE00C80A7D /* TaskManager.swift in Sources */,
+				2DF8BA37216E4B2D00C80A7D /* Login.swift in Sources */,
+				2DA04607216FA6D8000018B0 /* Login Segue.swift in Sources */,
+				2DF8BA2C216D25A700C80A7D /* Users.swift in Sources */,
+				2DF8BA31216D27F500C80A7D /* TableViewCell.swift in Sources */,
+				2DF8BA3B216E4B5D00C80A7D /* NewTask.swift in Sources */,
+				2DF8BA39216E4B4700C80A7D /* Tasks.swift in Sources */,
+				2DF8BA33216D283B00C80A7D /* User.swift in Sources */,
+				2DF8BA35216D285300C80A7D /* Task.swift in Sources */,
 				2DF8BA16216D171C00C80A7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
