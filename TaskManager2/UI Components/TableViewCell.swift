@@ -10,15 +10,14 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var taskNameLabel: UILabel!
+    @IBOutlet weak var taskTypeLabel: UILabel!
+    @IBOutlet weak var taskDescriptionLabel: UILabel!
+    @IBOutlet weak var taskDateLabel: UILabel!
+    @IBOutlet weak var taskCompletionLabel: UILabel!
+    
+    @IBAction func turnInButton(_ sender: Any) {
+        taskCompletionLabel.text = "Complete"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }

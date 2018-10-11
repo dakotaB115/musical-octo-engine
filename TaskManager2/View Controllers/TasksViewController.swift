@@ -10,10 +10,12 @@ import UIKit
 
 class Tasks: UIViewController {
 
+    @IBOutlet weak var taskTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        taskTableView.reloadData()
     }
 
 }
