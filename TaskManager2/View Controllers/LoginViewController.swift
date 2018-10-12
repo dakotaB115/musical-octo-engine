@@ -17,7 +17,7 @@ class Login: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Label.text = "Please enter your login credentials"
     }
 
     @IBAction func Login(_ sender: Any) {
@@ -27,7 +27,6 @@ class Login: UIViewController {
         
         if testUser.loggedIn == true {
             Label.text = "Login Successful"
-            testUser.loggedIn = false
             
             performSegue(withIdentifier: "LoginToTasks", sender: self)
             

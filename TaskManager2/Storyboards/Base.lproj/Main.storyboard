@@ -107,7 +107,7 @@
                                     <navigationItem title="Your Tasks" id="4DJ-2K-9QS">
                                         <barButtonItem key="leftBarButtonItem" title="Logout" id="eO4-33-uJd">
                                             <connections>
-                                                <segue destination="LpO-xB-yFn" kind="show" id="MHV-IX-yto"/>
+                                                <action selector="LogoutButton:" destination="La7-ma-7LS" id="DDg-ss-Ftr"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HWw-wE-SuK">
@@ -118,11 +118,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UgM-Ep-LAw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UgM-Ep-LAw">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="3ck-OA-3KV" customClass="TableViewCell" customModule="TaskManager2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskCell" rowHeight="75" id="3ck-OA-3KV" customClass="TableViewCell" customModule="TaskManager2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ck-OA-3KV" id="BQX-Oo-vpR">
@@ -130,27 +130,27 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vvv-0z-duz">
-                                                    <rect key="frame" x="10" y="5" width="394" height="65.333333333333329"/>
+                                                    <rect key="frame" x="10" y="5.3333333333333357" width="394" height="65"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iya-me-XDd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="249" height="65.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="249" height="65"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-f6-cku">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="249" height="22.666666666666668"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="249" height="22.333333333333332"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Task Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJP-ah-TZP">
-                                                                    <rect key="frame" x="0.0" y="23.666666666666671" width="249" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="23.333333333333336" width="249" height="20.333333333333336"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Task Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4B-wY-HuR">
-                                                                    <rect key="frame" x="0.0" y="45" width="249" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="44.666666666666664" width="249" height="20.333333333333336"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -159,7 +159,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="alF-jx-5oM">
-                                                            <rect key="frame" x="254" y="0.0" width="140" height="65.333333333333329"/>
+                                                            <rect key="frame" x="254" y="0.0" width="140" height="65"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM/ DD/ YYYY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="140" translatesAutoresizingMaskIntoConstraints="NO" id="UDp-7a-haf">
                                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="21"/>
@@ -184,7 +184,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yn6-ex-m9j">
-                                                                    <rect key="frame" x="0.0" y="44" width="140" height="21.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="44" width="140" height="21"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="piT-CP-bPO"/>
@@ -203,8 +203,8 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="Vvv-0z-duz" firstAttribute="top" secondItem="BQX-Oo-vpR" secondAttribute="top" constant="5" id="LFN-C5-SmU"/>
                                                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Vvv-0z-duz" secondAttribute="trailing" constant="10" id="OnO-d9-RHo"/>
                                                 <constraint firstItem="Vvv-0z-duz" firstAttribute="leading" secondItem="BQX-Oo-vpR" secondAttribute="leading" constant="10" id="jL6-fe-noz"/>
                                                 <constraint firstAttribute="bottom" secondItem="Vvv-0z-duz" secondAttribute="bottom" constant="4.5" id="nMM-o8-m4w"/>
@@ -220,6 +220,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="La7-ma-7LS" id="HrI-oR-cfl"/>
+                                    <outlet property="delegate" destination="La7-ma-7LS" id="0GU-00-oht"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.92154449224472046" green="0.91367334127426147" blue="0.91764020919799805" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -236,6 +240,7 @@
                     </view>
                     <connections>
                         <outlet property="taskTableView" destination="UgM-Ep-LAw" id="7MV-bF-ehG"/>
+                        <segue destination="LpO-xB-yFn" kind="show" identifier="TasksToLogin" id="eaa-zB-J7b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6P-fI-dH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,7 +260,11 @@
                                 <items>
                                     <navigationItem title="Add Task" id="Dg0-z4-mmD">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="bUb-Nv-jiR"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="sY0-EY-G29"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="sY0-EY-G29">
+                                            <connections>
+                                                <action selector="SaveButton:" destination="QaZ-Xv-dpv" id="IKy-wZ-0Dd"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -301,8 +310,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3yz-iR-4QE"/>
                     </view>
+                    <connections>
+                        <outlet property="CompleteByDate" destination="Qrd-K0-Lvh" id="E5G-to-0od"/>
+                        <outlet property="TaskDescriptionTextField" destination="C09-Jp-Fxs" id="TVF-g5-riP"/>
+                        <outlet property="TaskNameTextField" destination="E0Z-q0-oTI" id="n9S-4k-IzN"/>
+                        <outlet property="TaskTypeTextField" destination="QpD-hH-4r1" id="JWi-U6-fV1"/>
+                        <segue destination="Wem-5L-WgH" kind="unwind" identifier="unwindToTasks" unwindAction="unwindToTasks:" id="cJQ-Kx-O2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ha-n1-NbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Wem-5L-WgH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2194" y="329"/>
         </scene>
